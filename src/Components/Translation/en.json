@@ -5,5 +5,12 @@
   "About": "About Us",
   "Contact": "Contact",
   "Products": "Products & Service",
-  "Careers": "Careers"
+  "Careers": "Careers",
+  "AboutUs": "About Healthcare",
+  "Healthcare": "At Healthcare Security Solutions, we are committed to safeguarding the well-being of both individuals and healthcare organizations. With a deep understanding of the unique challenges faced by the healthcare industry, we have dedicated ourselves to providing comprehensive security solutions that protect not only data and assets but also the lives of those in care.",
+  "Title1":"Our Mission",
+  "Healthcare1": "Our mission is to bridge the gap between healthcare and security, ensuring that patients can focus on their recovery, healthcare providers can deliver exceptional care, and administrators can manage their facilities with confidence. We aim to create a safer, more secure healthcare environment for everyone involved.",
+  "LearnMore": "Learn More",
+  "SignIn": "Sign In"
+
 }

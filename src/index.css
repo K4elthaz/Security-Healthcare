@@ -23,18 +23,134 @@
 }
 
 .carousel-img {
-  height: 775px;
-  opacity: 0.7;
-  padding: 10px;
+  height: 700px;
+  width: 100% !important;
+  opacity: 0.;
+
   border-radius: 40px;
+  box-shadow: 2px 4px 4px #000000;
 }
 
 @media (max-width: 768px) {
+  html,
+  body{
+    font-size: 70%;
+  }
   .carousel-img {
     height: 300px;
-    opacity: 0.7;
+    opacity: 0.9;
+  }
+  .logo {
+    height: 3em;
+    margin-left: 10px;
+  }
+  .centered-heading {
+    font-size: 30px !important;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #304674;
+    user-select: none;
+    text-align: center;
+  }
+  
+  .centered-description {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+    user-select: none;
+    margin-left: 20px;
+    font-size: 10px;
+  }
+  
+  .backdrop {
+    transform: translate(-30%, 200%) !important;
+    backdrop-filter: blur(10px);
+    background-color: rgba(59, 59, 59, 0.192);
+    padding: 5px !important;
+    border-radius: 30px !important;
+    opacity: 0; /* Start with zero opacity */
+    transition: opacity 0.9s ease; /* Add a transition to the opacity property */
+    position: relative; /* Add position:relative to control stacking context */
+  }
+
+  .pics{
+    justify-content: center !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin-top: 20px;
+  }
+  .main-visual{
+    height: 35vh !important;
+  }
+  .about{
+    margin-top: 10px !important;
   }
 }
+
+.centered-heading {
+  font-size: 200px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #304674;
+  user-select: none;
+  text-align: center;
+}
+
+.centered-description {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px #000000;
+  user-select: none;
+  margin-left: 20px;
+
+}
+
+.backdrop {
+  transform: translate(-40%, 70%);
+  backdrop-filter: blur(10px);
+  background-color: rgba(59, 59, 59, 0.192);
+  padding: 30px;
+  border-radius: 40px;
+  opacity: 0; /* Start with zero opacity */
+  transition: opacity 0.5s ease; /* Add a transition to the opacity property */
+  position: relative; /* Add position:relative to control stacking context */
+}
+.main-visual {
+  position: relative;
+  height: 80vh;
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.pics{
+  justify-content: center !important;
+  display: flex !important;
+  align-items: center !important;
+  width: 80% ;
+}
+
+/* Add this CSS to your stylesheet */
+.about-section {
+  transition: opacity 0.5s; /* Adjust the duration as needed */
+  opacity: 0;
+  padding: 10px !important;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.about{
+  margin-top: 120px !important;
+  text-align: justify;
+}
+
+
+
+
+
 
 /* a {
   font-weight: 500;
@@ -83,3 +199,33 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+.notification {
+  border-radius: 1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1);
+}
+
+.notification:hover {
+  transform: scale(1.1); /* Scale to 110% on hover (adjust the value as desired) */
+}
+
+
+.notibody {
+  color: #99999d;
+  padding: 0 1.25rem;
+  transition: transform 300ms ease;
+  z-index: 5;
+  user-select: none;
+}
+
+.right{
+  text-align: end;
+}
+
+
+
+
+
