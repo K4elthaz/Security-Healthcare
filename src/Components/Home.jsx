@@ -6,6 +6,7 @@ import AboutUs from "./About";
 import MoreInfo from "./MoreInfo";
 import Products from "./Products";
 import Footer from "./Footer";
+import Review from "./Review";
 
 const LandingPage = () => {
   return (
@@ -17,6 +18,7 @@ const LandingPage = () => {
       <AboutUs />
       <MoreInfo />
       <Products />
+      <Review />
       <div>
       <Footer />
       </div>

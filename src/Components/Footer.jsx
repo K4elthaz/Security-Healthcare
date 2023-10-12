@@ -30,6 +30,7 @@ const Footer = () => {
         fluid
         className="footer"
         style={{ ...containerStyle, ...fullWidth }}
+        id="contact"
       >
         <Row style={fullWidth}>
           <Col>
