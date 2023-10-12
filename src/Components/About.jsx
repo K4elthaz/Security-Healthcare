@@ -55,28 +55,6 @@ const About = () => {
             <img className="pics" src={pic9} alt="" />
           </Col>
         </Row>
-        {/* <Row>
-          <Col className="cards" xs={12} sm={6}>
-            <Card className="notification">
-              <Card.Body className="notibody">{t("Healthcare")}</Card.Body>
-            </Card>
-          </Col>
-          <Col xs={12} sm={6} className="cards">
-            <img className="pics" src={pic1} alt="" />
-          </Col>
-        </Row>
-        <Row className="">
-          <h1 className="mt-5 right">{t("Title1")}</h1>
-          <Col xs={12} sm={6} className="cards mb-4">
-            <img className="pics" src={pic2} alt="" />
-          </Col>
-
-          <Col className="cards" xs={12} sm={6}>
-            <Card className="notification">
-              <Card.Body className="notititle">{t("Healthcare1")}</Card.Body>
-            </Card>
-          </Col>
-        </Row> */}
       </div>
     </Container>
   );

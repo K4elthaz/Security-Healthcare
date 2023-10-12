@@ -13,7 +13,7 @@ const MainVisual = () => {
     // Delay the initial fade-in effect when the component mounts
     setTimeout(() => {
       setFadeIn(true);
-    }, 500); // Adjust the delay as needed
+    }, 500);
 
     const interval = setInterval(() => {
       // Start the fade-out effect
@@ -26,10 +26,10 @@ const MainVisual = () => {
         // Trigger the fade-in after changing the heading
         setFadeIn(true);
       }, 1000); // Delay the heading change for 1 second after fade-out
-    }, 4000); // Change heading every 4 seconds (1 second for fade-out and 3 seconds for fade-in)
+    }, 4000);
 
     return () => {
-      clearInterval(interval); // Clear the interval when the component unmounts
+      clearInterval(interval);
     };
   }, [headings.length]);
 
@@ -50,7 +50,7 @@ const MainVisual = () => {
     top: "50%",
     left: "28%",
     opacity: fadeIn ? 1 : 0,
-    transition: "opacity 1.5s ease", // Adjust the duration as needed
+    transition: "opacity 1.5s ease",
   };
 
   const centeredHeadingStyle = {
@@ -66,7 +66,7 @@ const MainVisual = () => {
         fade
         controls={false}
         indicators={false}
-        interval={4000} // Match the interval with the heading change interval
+        interval={4000}
         style={carouselStyle}
         pause={false}
       >

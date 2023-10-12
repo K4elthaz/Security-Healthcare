@@ -29,7 +29,7 @@ const Review = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (review.current) { // Check if review ref exists
+      if (review.current) {
         const { top } = review.current.getBoundingClientRect();
         setFadeIn(top <= window.innerHeight / 2);
       }
@@ -45,7 +45,7 @@ const Review = () => {
   const BG = {
     background: `url(${footer}) no-repeat center center fixed`,
     backgroundSize: "cover",
-    minHeight: "50vh", // Set to an appropriate value
+    minHeight: "100vh",
     userSelect: "none",
   };
 
