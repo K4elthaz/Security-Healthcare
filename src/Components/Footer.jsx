@@ -11,13 +11,17 @@ const Footer = () => {
     userSelect: "none",
     background: `url(${pic20}) no-repeat center center fixed`,
     backgroundSize: "cover",
-    padding: "10px",
-
-
   };
+
+  const fullWidth = {
+    width: "100%",
+    padding: "30px",
+  };
+
   return (
-    <Container className="footer" style={containerStyle}>
-      <Row>
+    <div>
+    <Container fluid className="footer" style={{ ...containerStyle, ...fullWidth }}>
+      <Row style={fullWidth}>
         <Col>
           <p className="">© 2021 HealthCare. All rights reserved.</p>
           <p>
@@ -28,10 +32,10 @@ const Footer = () => {
           </p>
           <h2 className="mt-3">Contact Us: </h2>
 
-          <img className="icons " src={fb} alt="" />
-          <img className="icons " src={ig} alt="" />
-          <img className="icons " src={disc} alt="" />
-          <img className="icons " src={skype} alt="" />
+          <img className="icons" src={fb} alt="" />
+          <img className="icons" src={ig} alt="" />
+          <img className="icons" src={disc} alt="" />
+          <img className="icons" src={skype} alt="" />
         </Col>
         <Col>
           <h3>Links</h3>
@@ -44,6 +48,7 @@ const Footer = () => {
         </Col>
       </Row>
     </Container>
+    </div>
   );
 };
 
