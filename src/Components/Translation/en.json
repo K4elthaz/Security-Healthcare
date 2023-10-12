@@ -11,6 +11,11 @@
   "Title1":"Our Mission",
   "Healthcare1": "Our mission is to bridge the gap between healthcare and security, ensuring that patients can focus on their recovery, healthcare providers can deliver exceptional care, and administrators can manage their facilities with confidence. We aim to create a safer, more secure healthcare environment for everyone involved.",
   "LearnMore": "Learn More",
-  "SignIn": "Sign In"
+  "SignIn": "Sign In",
+  "Mission": "Our mission is to bridge the gap between healthcare and security, ensuring that patients can focus on their recovery, healthcare providers can deliver exceptional care, and administrators can manage their facilities with confidence. We aim to create a safer, more secure healthcare environment for everyone involved.",
+  "Missions": "Our Mission",
+  "WHO": "According to the World Health Organization (WHO), 'Health is a state of complete physical, mental, and social well-being.' This highlights the comprehensive nature of health. Healthcare is vital for all of us, as it ensures our well-being in every aspect of life.",
+  "Lorem":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "Prod":"Products & Services"
 
 }

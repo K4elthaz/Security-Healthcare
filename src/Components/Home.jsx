@@ -4,6 +4,8 @@ import Navigation from "./Navigation";
 import MainVisual from "./MainVisual";
 import AboutUs from "./About";
 import MoreInfo from "./MoreInfo";
+import Products from "./Products";
+
 const LandingPage = () => {
   return (
     <Container fluid>
@@ -13,6 +15,7 @@ const LandingPage = () => {
       </div>
       <AboutUs />
       <MoreInfo />
+      <Products />
     </Container>
   );
 };

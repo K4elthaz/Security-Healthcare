@@ -32,10 +32,10 @@ function Navigation() {
       />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto mx-auto ">
-          <Nav.Link href="/" className="text-white">
+          <Nav.Link href="/" className="text-white ">
             <h6>{t("Home")}</h6>
           </Nav.Link>
-          <Nav.Link href="#about-section" className="text-white">
+          <Nav.Link href="#about-section" className="text-white ">
             <h6>{t("About")}</h6>
           </Nav.Link>
 
