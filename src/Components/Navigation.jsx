@@ -43,15 +43,15 @@ function Navigation() {
             <h6>{t("Contact")}</h6>
           </Nav.Link>
         </Nav>
-              <div className="me-5 text-white centered">
-        Eng
-        <Switch
-          defaultChecked={false}
-          color="warning"
-          onClick={toggleLanguage}
-        />
-        Jap
-      </div>
+        <div className="me-5 text-white centered">
+          Eng
+          <Switch
+            defaultChecked={false}
+            color="warning"
+            onClick={toggleLanguage}
+          />
+          Jap
+        </div>
       </Navbar.Collapse>
     </Navbar>
   );
