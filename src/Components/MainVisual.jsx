@@ -68,6 +68,7 @@ const MainVisual = () => {
         indicators={false}
         interval={4000} // Match the interval with the heading change interval
         style={carouselStyle}
+        pause={false}
       >
         <Carousel.Item>
           <img
