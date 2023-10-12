@@ -22,7 +22,7 @@ function Navigation() {
   };
 
   return (
-    <Navbar expand="lg" style={{ backgroundColor: "#304674" }}>
+    <Navbar expand="lg" className="sticky-nav" style={{ backgroundColor: "#304674" }}>
       <Navbar.Brand href="/">
         <img className="logo" src={Logo} alt="logo" />
       </Navbar.Brand>

@@ -17,7 +17,10 @@ const LandingPage = () => {
       <AboutUs />
       <MoreInfo />
       <Products />
+      <div>
       <Footer />
+      </div>
+
     </Container>
   );
 };

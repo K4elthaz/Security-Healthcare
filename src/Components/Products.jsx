@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Container, Row, Col, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Container, Carousel } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import Translate from "./Translate";
-import pic1 from "../assets/13.png";
-import pic2 from "../assets/17.png";
-import pic3 from "../assets/15.png";
-import pic4 from "../assets/16.png";
-import pic20 from "../assets/24.png";
-import pic21 from "../assets/33.png";
-import pic22 from "../assets/34.png";
+import A from "../assets/a.jpg";
+import B from "../assets/s.jpg";
+import C from "../assets/d.jpg";
+import D from "../assets/q.jpg";
+import E from "../assets/w.jpg";
+import F from "../assets/e.jpg";
+import G from "../assets/r.jpg";
 
 const Products = () => {
   const { t } = useTranslation();
@@ -17,10 +17,7 @@ const Products = () => {
 
   const productsRef = useRef(null);
   const containerStyle = {
-    minHeight: "100vh",
     userSelect: "none",
-    background: `url(${pic20}) no-repeat center center fixed`,
-    backgroundSize: "cover",
     backgroundColor: "#092a44",
   };
 
@@ -39,18 +36,67 @@ const Products = () => {
     };
   }, []);
 
-  const renderTooltip = (text) => <Tooltip id="tooltip">{text}</Tooltip>;
-
   return (
-    <Container
-      id="products-service"
-      fluid
-      style={containerStyle}
-      className={`about-section ${fadeIn ? "fade-in" : ""}`}
+    <div
+      className={`about-section1 ${fadeIn ? "fade-in" : ""}`}
       ref={productsRef}
+      style={containerStyle}
+      id="products-service"
     >
-      <h1 className="text-white centered mt-5">{t("Prod")}</h1>
-      <Row className="mb-5 mt-5 centered">
+      <Carousel
+        interval={3000}
+        pause={false}
+        style={{ width: "100%", height: "100%" }}
+      >
+        <Carousel.Item>
+          <img className="prod" src={A} alt="First slide" />
+          <Carousel.Caption>
+            <h3 className="prodstyle">{t("Prod")}</h3>
+            <p className="proddesc">{t("Lorem")}</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img className="prod" src={D} alt="First slide" />
+          <Carousel.Caption>
+            <h3 className="prodstyle">{t("Prod")}</h3>
+            <p className="proddesc">{t("Lorem")}</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img className="prod" src={E} alt="First slide" />
+          <Carousel.Caption>
+            <h3 className="prodstyle">{t("Prod")}</h3>
+            <p className="proddesc">{t("Lorem")}</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img className="prod" src={F} alt="First slide" />
+          <Carousel.Caption>
+            <h3 className="prodstyle">{t("Prod")}</h3>
+            <p className="proddesc">{t("Lorem")}</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img className="prod" src={G} alt="First slide" />
+          <Carousel.Caption>
+            <h3 className="prodstyle">{t("Prod")}</h3>
+            <p className="proddesc">{t("Lorem")}</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    </div>
+    // </Container>
+  );
+};
+
+export default Products;
+
+{
+  /* <Row className="mb-5 mt-5 centered">
         <Col xs={12} sm={6}>
           <OverlayTrigger
             placement="bottom"
@@ -98,9 +144,5 @@ const Products = () => {
             </OverlayTrigger>
 
         </Col>
-      </Row>
-    </Container>
-  );
-};
-
-export default Products;
+      </Row> */
+}
