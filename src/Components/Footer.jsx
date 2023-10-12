@@ -5,6 +5,9 @@ import ig from "../assets/IG.png";
 import disc from "../assets/disc.png";
 import skype from "../assets/skype.png";
 import pic20 from "../assets/20.png";
+import { useTranslation } from "react-i18next";
+import Translate from "./Translate";
+
 
 const Footer = () => {
   const containerStyle = {
@@ -18,36 +21,39 @@ const Footer = () => {
     padding: "30px",
   };
 
+  const { t } = useTranslation();
+  const { toggleLanguage } = Translate();
+
   return (
     <div>
-    <Container fluid className="footer" style={{ ...containerStyle, ...fullWidth }}>
-      <Row style={fullWidth}>
-        <Col>
-          <p className="">© 2021 HealthCare. All rights reserved.</p>
-          <p>
-            <i>
-              HealthCare is a platform that provides you with the best
-              healthcare services.
-            </i>
-          </p>
-          <h2 className="mt-3">Contact Us: </h2>
+      <Container
+        fluid
+        className="footer"
+        style={{ ...containerStyle, ...fullWidth }}
+      >
+        <Row style={fullWidth}>
+          <Col>
+            <h2 className="">{t("ContactUs")}</h2>
 
-          <img className="icons" src={fb} alt="" />
-          <img className="icons" src={ig} alt="" />
-          <img className="icons" src={disc} alt="" />
-          <img className="icons" src={skype} alt="" />
-        </Col>
-        <Col>
-          <h3>Links</h3>
-          <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Products & Services</li>
-            <li>More Info</li>
-          </ul>
-        </Col>
-      </Row>
-    </Container>
+            <img className="icons" src={fb} alt="" />
+            <img className="icons" src={ig} alt="" />
+            <img className="icons" src={disc} alt="" />
+            <img className="icons" src={skype} alt="" />
+            <p className="">{t("Reserve")}</p>
+            <p>
+              <i>
+              {t("Say")}
+              </i>
+            </p>
+          </Col>
+          <Col className="">
+            <h3>Contact Information</h3>
+            <p>Email: example@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Main St, City, Country</p>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };

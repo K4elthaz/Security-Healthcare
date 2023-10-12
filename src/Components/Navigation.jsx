@@ -5,24 +5,19 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Translate from "./Translate";
 import Switch from "@mui/material/Switch";
-import Logo from "../assets/logo1.png";
+import Logo from "../assets/logo.png";
 
 function Navigation() {
   const { t } = useTranslation();
   const { toggleLanguage } = Translate();
-  const aboutSectionRef = useRef(null);
-
-  const scrollToAbout = () => {
-    console.log("Scrolling to About Us section"); // Add this line
-    if (aboutSectionRef.current) {
-      aboutSectionRef.current.scrollIntoView({
-        behavior: "smooth", // Smooth scrolling effect
-      });
-    }
-  };
 
   return (
-    <Navbar expand="lg" className="sticky-nav" style={{ backgroundColor: "#304674" }}>
+    <Navbar
+      active
+      expand="lg"
+      className="sticky-nav centered"
+      style={{ backgroundColor: "#304674" }}
+    >
       <Navbar.Brand href="/">
         <img className="logo" src={Logo} alt="logo" />
       </Navbar.Brand>
@@ -38,7 +33,6 @@ function Navigation() {
           <Nav.Link href="#about-section" className="text-white ">
             <h6>{t("About")}</h6>
           </Nav.Link>
-
           <Nav.Link href="#products-service" className="text-white">
             <h6>{t("Products")}</h6>
           </Nav.Link>
@@ -49,8 +43,7 @@ function Navigation() {
             <h6>{t("Contact")}</h6>
           </Nav.Link>
         </Nav>
-      </Navbar.Collapse>
-      <div className="me-5 text-white">
+              <div className="me-5 text-white centered">
         Eng
         <Switch
           defaultChecked={false}
@@ -59,6 +52,7 @@ function Navigation() {
         />
         Jap
       </div>
+      </Navbar.Collapse>
     </Navbar>
   );
 }
