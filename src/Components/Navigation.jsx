@@ -1,4 +1,3 @@
-// Navigation.js
 import React, { useRef } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
