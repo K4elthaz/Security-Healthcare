@@ -5,6 +5,7 @@ import MainVisual from "./MainVisual";
 import AboutUs from "./About";
 import MoreInfo from "./MoreInfo";
 import Products from "./Products";
+import Footer from "./Footer";
 
 const LandingPage = () => {
   return (
@@ -16,6 +17,7 @@ const LandingPage = () => {
       <AboutUs />
       <MoreInfo />
       <Products />
+      <Footer />
     </Container>
   );
 };
