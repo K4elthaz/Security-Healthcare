@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Translate from "./Translate";
 import Switch from "@mui/material/Switch";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/LogoNew.png";
 
 function Navigation() {
   const { t } = useTranslation();
